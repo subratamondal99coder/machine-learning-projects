@@ -1,10 +1,13 @@
 import streamlit as st
 import joblib
+import os
 import pandas as pd
 # Page settings
 st.set_page_config(page_title="House Price Predictor",page_icon="🏠",layout="wide")
 # Load train model
-model=joblib.load("house_model.pkl")
+current_dir=os.path.dirname(__file__)
+model_path=os.path.join(current_dir,"house_model.pkl")
+model=joblib.load(model_path)
 st.title("🏠House Price Predictor")
 st.caption("Al-powered house price prediction using Machine Learning")
 st.sidebar.title("ℹ️About")
