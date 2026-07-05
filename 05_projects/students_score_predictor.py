@@ -1,7 +1,9 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
+import os
 # Load csv file
-data=pd.read_csv("students.csv")
+Base_Dir=os.path.dirname(os.path.abspath(__file__))
+data=pd.read_csv(os.path.join(Base_Dir,"students_score.csv"))
 # Feature and target
 x=data[["Hours"]]
 y=data["Marks"]

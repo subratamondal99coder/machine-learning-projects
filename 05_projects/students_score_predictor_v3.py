@@ -3,8 +3,11 @@ from sklearn.linear_model  import LinearRegression
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import axes3d
+import os
+import joblib
 # Load data
-data=pd.read_csv("students_multi.csv")
+Base_Dir=os.path.dirname(os.path.abspath(__file__))
+data=pd.read_csv(os.path.join(Base_Dir,"students_score_multi.csv"))
 # Feature and taeget
 x=data[["Hours","Sleep","Attendance"]]
 y=data["Marks"]
@@ -34,3 +37,5 @@ ax.set_ylabel("Sleep Hours")
 ax.set_zlabel("Marks")
 plt.title("Multiple Linear Regression Data")
 plt.show()
+# Save model with joblib
+joblib.dump(model,os.path.join(Base_Dir,"students_model_v3.pkl"))

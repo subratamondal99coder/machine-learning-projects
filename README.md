@@ -11,7 +11,7 @@ M.Sc Physics graduate transitioning to ML Engineering
 - 05_projects/ - End-to-end projects
 
 ## Skills
-Python | NumPy | Pandas | Matplotlib | Scikit-learn | Streamlit | SQL
+Python | SQL | NumPy | Pandas | Matplotlib | Scikit-learn | Streamlit |
 
 ## Projects
 1. Student Marks Predictor (Linear Regression)
@@ -20,4 +20,4 @@ Python | NumPy | Pandas | Matplotlib | Scikit-learn | Streamlit | SQL
 4. House Price Predictor Web App(Streamlit)
 - Live Demo:https://house-price-ml-subrata.streamlit.app
 ## Live Projects
-🚀House Price Predictor:https://house-price-ml-subrata.streamlit.app
+🚀[House Price Predictor]:https://house-price-ml-subrata.streamlit.app

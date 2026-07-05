@@ -2,8 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
+import joblib
+import os
 # Load csv
-data= pd.read_csv("students.csv")
+Base_Dir=os.path.dirname(os.path.abspath(__file__))
+data= pd.read_csv(os.path.join(Base_Dir,"students_score.csv"))
 # Feature and target
 x=data[["Hours"]]
 y=data["Marks"]
@@ -30,4 +33,7 @@ plt.title("Students Marks Prediction")
 plt.legend()
 plt.grid(True)
 plt.show()
+# Save model with joblib
+joblib.dump(model,os.path.join(Base_Dir,"students_model.pkl"))
+
 
