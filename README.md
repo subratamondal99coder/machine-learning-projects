@@ -19,5 +19,6 @@ Python | SQL | NumPy | Pandas | Matplotlib | Scikit-learn | Streamlit |
 3. Iris Flower Classification (KNN + Decision Tree)
 4. House Price Predictor Web App(Streamlit)
 - Live Demo:https://house-price-ml-subrata.streamlit.app
-## Live Projects
-🚀[House Price Predictor]:https://house-price-ml-subrata.streamlit.app
+## 🚀 Live Deployed Apps
+🏡[House Price Predictor]:https://house-price-ml-subrata.streamlit.app
+🎓[Students Marks Predictor]:https://students-marks-predictor-ml-subrata.streamlit.app/
